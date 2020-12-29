@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.displayflex{
+    display: flex;
+}
+
+/******************HEADER****************/
+
+header{
+    justify-content: flex-end;
+    width: 100%;
+    height: 90px;
+    position: sticky ;
+    top: 0;
+    background-color: white;
+}
+
+.headerderecha{
+    text-align: center;
+    align-items: center;
+    margin-right: 95px;
+}
+
+.margen40{
+    margin-right: 40px;
+}
+
+.botón{
+    color: black;
+    text-decoration: none;
+}
+
+.botón:hover{
+    color: #F7A2BF;
+}
+
+/******************SECTION ABOUT ME****************/
+
+.aboutme{
+    background-color: #FAFAFA;
+    padding: 100px 90px 130px;
+    justify-content: center;
+    text-align: center;
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spacebetween{
+    justify-content: space-evenly;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+    padding: 110px 40px 130px;
+    line-height: 1.4;
+    width: 55%;
+}
+
+.holasoy{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.nombre{
+    color: #D86D92;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.descripción{
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #616161;
+}
+
+.botón1{
+    text-decoration: none;
+    background-color: #D86D92;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 500; 
+}
+
+.botón1:hover{
+    background-color: #F7A2BF;
+}
+
+.botón2{
+    text-decoration: none;
+    background-color: #D86D92;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 100px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.botón2:hover{
+    background-color: #F7A2BF;
+}
+
+
+.cajaimg1{
+    width: 45%;
+    padding: 110px 40px 130px;
+    background-color: #FAFAFA;
+}
+
+.img1{
+    width: 100%;
+    max-width: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
