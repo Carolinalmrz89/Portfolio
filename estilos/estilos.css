@@ -40,7 +40,7 @@ header{
     color: #F7A2BF;
 }
 
-/******************SECTION ABOUT ME****************/
+/******************SECTION ABOUT ME*************/
 
 .aboutme{
     background-color: #FAFAFA;
@@ -56,7 +56,7 @@ header{
 }
 
 .spacebetween{
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .info{
@@ -129,6 +129,97 @@ header{
 .img1{
     width: 100%;
     max-width: 550px;
+}
+
+/**************SECTION CONOCIMIENTOS*************/
+
+.conocimientos{
+    background-color: #F6F7FB;
+    display: flex;
+    flex-direction: column;
+    padding:100px 200px 130px ;
+}
+
+.caja-conocimientos{
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 1.4;
+    width: 100%;
+    
+}
+
+.h1-conocimientos{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.p-conocimientos{
+    width: 35%;
+    margin-top: 20px;
+}
+
+.card1-conocimientos{
+    padding-top: 70px;
+    justify-content: space-evenly;
+}
+
+.card{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    height: 240px;
+    width: 270px;
+    cursor: pointer;
+    
+}
+.card:hover{
+    color:  #F7A2BF;
+    border-color:  #F7A2BF;
+    transition: 0.3s;
+}
+
+.card2-conocimientos{
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+.imgcard1{
+    max-width: 30%;
+    margin-top: 20px;
+}
+
+.imgcard2{
+    max-width: 30%;
+    margin-top: 60px;
+}
+
+.imgcard3{
+    max-width: 30%;
+    margin-top: 60px;
+}
+
+.imgcard4{
+    max-width: 30%;
+    margin-top: 20px;
+}
+
+.imgcard5{
+    max-width: 30%;
+    margin-top: 60px;
+}
+
+.imgcard6{
+    max-width: 30%;
+    margin-top: 60px;
+}
+.h3-conocimientos{
+    margin-top: 20px;
 }
 
 
