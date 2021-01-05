@@ -16,7 +16,8 @@ header{
     justify-content: flex-end;
     width: 100%;
     height: 90px;
-    position: sticky ;
+    position: sticky;
+    z-index: 5;
     top: 0;
     background-color: white;
 }
@@ -43,7 +44,7 @@ header{
 /******************SECTION ABOUT ME*************/
 
 .aboutme{
-    background-color: #FAFAFA;
+    background-color: #F0E4E6;
     padding: 100px 90px 130px;
     justify-content: center;
     text-align: center;
@@ -119,11 +120,10 @@ header{
     background-color: #F7A2BF;
 }
 
-
 .cajaimg1{
     width: 45%;
     padding: 110px 40px 130px;
-    background-color: #FAFAFA;
+    background-color: #F0E4E6;
 }
 
 .img1{
@@ -134,10 +134,11 @@ header{
 /**************SECTION CONOCIMIENTOS*************/
 
 .conocimientos{
-    background-color: #F6F7FB;
+    background-color:  #F2F2F2;
     display: flex;
     flex-direction: column;
     padding:100px 200px 130px ;
+    color: black;
 }
 
 .caja-conocimientos{
@@ -148,7 +149,6 @@ header{
     align-items: center;
     line-height: 1.4;
     width: 100%;
-    
 }
 
 .h1-conocimientos{
@@ -171,14 +171,14 @@ header{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: white;
     border: 1px solid #dddfe5;
     border-radius: 8px;
     height: 240px;
     width: 270px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
+
 .card:hover{
     color:  #F7A2BF;
     border-color:  #F7A2BF;
@@ -189,6 +189,7 @@ header{
     padding-top: 30px;
     justify-content: space-evenly;
 }
+
 .imgcard1{
     max-width: 30%;
     margin-top: 20px;
@@ -218,10 +219,44 @@ header{
     max-width: 30%;
     margin-top: 60px;
 }
+
 .h3-conocimientos{
     margin-top: 20px;
 }
 
+/*************SECTION SOMEONE***************/
+
+ .someone{
+     background-color:  #F0E4E6;
+     width: 100%;
+     height: 560px;
+     padding: 100px 250px 130px ; 
+ }
+
+ .caja-someone{
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+     line-height: 1.6;
+     color: black;
+     width: 100%;
+ }
+
+ .header-someone{
+     font-size: 160px;
+     font-weight: 800;
+     background-color:  #F0E4E6;
+ }
+
+ .main-someone{
+     margin-top: 60px;
+ }
+
+ .footer-someone{
+     font-size: 30px;
+     font-weight: 800;
+ }
 
 
 
