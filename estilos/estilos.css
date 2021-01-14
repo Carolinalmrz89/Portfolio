@@ -307,9 +307,10 @@ header{
      font-weight: 900;
  }
 
- .p-proyectos{
-     margin-top: 30px;
-     width: 40%;
+ .h3-proyectos{
+     margin-bottom: 5px;
+     width: 100%;
+     color: black;
  }
 
  .card-proyectos{
@@ -321,18 +322,13 @@ header{
     border: 1px solid rgb(168, 166, 166);
     border-radius: 8px;
     cursor: pointer; 
+    text-decoration: none;
  }
  .card-proyectos:hover{
     color:  #F7A2BF;
     border-color:  #F7A2BF;
     transition: 0.3s;
  }
-
- .card-proyectos:active{
-    box-shadow: 0 0 29px 0 #D86D92;
-    transition: 0.8s;
- }
-
  .card-fila1{
     height: 330px;
     width: 350px;
