@@ -28,17 +28,53 @@ header{
     margin-right: 95px;
 }
 
-.margen40{
-    margin-right: 40px;
+.margen15{
+    margin-right: 15px;
 }
 
 .botón{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
     text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.botón-hola{
+    width: 80px;
+    height: 40px;
+}
+
+.botón-conocimientos{
+    width: 175px;
+    height: 40px;
+}
+.botón-proyectos{
+    width: 130px;
+    height: 40px;
 }
 
 .botón:hover{
     color: #F7A2BF;
+}
+
+.botón2{
+    display: flex;
+    justify-content: center;align-items: center;
+    text-decoration: none;
+    background-color: #D86D92;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.botón2:hover{
+    background-color: #F7A2BF;
 }
 
 /******************SECTION ABOUT ME*************/
@@ -107,20 +143,6 @@ header{
     background-color: #F7A2BF;
 }
 
-.botón2{
-    text-decoration: none;
-    background-color: #D86D92;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 100px;
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.botón2:hover{
-    background-color: #F7A2BF;
-}
-
 .cajaimg1{
     width: 45%;
     padding: 110px 40px 130px;
@@ -173,7 +195,7 @@ header{
     text-align: center;
     align-items: center;
     background-color: #F2F2F2;
-    border: 1px solid gray;
+    border: 1px solid rgb(168, 166, 166);
     border-radius: 8px;
     height: 240px;
     width: 270px;
@@ -296,7 +318,7 @@ header{
     text-align: center;
     align-items: center;
     background-color: #F2F2F2;
-    border: 1px solid gray;
+    border: 1px solid rgb(168, 166, 166);
     border-radius: 8px;
     cursor: pointer; 
  }
@@ -304,6 +326,11 @@ header{
     color:  #F7A2BF;
     border-color:  #F7A2BF;
     transition: 0.3s;
+ }
+
+ .card-proyectos:active{
+    box-shadow: 0 0 29px 0 #D86D92;
+    transition: 0.8s;
  }
 
  .card-fila1{
@@ -413,41 +440,80 @@ header{
     line-height: 1.6;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0; 
-    padding-top: 20px;
-}
 
 .lista-contacto{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    padding: 20px;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 40px;
     cursor: pointer;
 }
-ul li:hover{
-   color: #D86D92;
+
+.links{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
-ul i:hover{
-    padding: 10px 10px;
-    border: 1px solid #D86D92;
-    border-radius: 50%;
-    background-color: #D86D92;
-    color: white;
+.links:hover{
+    color: #D86D92;
+    transition: 0,4s;
+}
 
+a:active{
+    border: 1px solid #D86D92;
+    box-shadow: 0 0 29px 0 #D86D92;
+    transition: 1s;
+}
+
+.iconos-contacto:hover{
+    color:white;
+    background-color: #D86D92;
+    transition: 0,4s;
 }
 .iconos-contacto{
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 8px;
     color: #D86D92;
-    padding-right: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+    width:35px;
+    height: 35px;
 }
+.link-twitter{
+    width: 210px;
+    height: 45px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+.link-git{
+    width: 195px;
+    height: 45px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+.link-in{
+    width: 160px;
+    height: 45px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+.link-mail{
+    width: 290px;
+    height: 45px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+
 
 
 
