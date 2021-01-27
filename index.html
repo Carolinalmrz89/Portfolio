@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="displayflex">
+    <header>
         <div class="headerderecha displayflex spacebetween">
             <a href="#aboutme" class="margen15 botón botón-hola">HOLA</a>
             <a href="#conocimientos" class="margen15 botón botón-conocimientos">CONOCIMIENTOS</a>
@@ -23,12 +23,12 @@
 
     <a name="aboutme"></a>
     <section class="aboutme">
-        <div class=" displayflex flexrow spacebetween">
+        <div class=" displayflex caja-aboutme spacebetween">
             <div class="info">
                 <h2 class="holasoy">¡Hola! Soy</h2>
                 <h1 class="nombre">Carolina Almaraz</h1>
-                <p class="descripción ">Desarrolladora Frontend en proceso, dibujante, cinéfila.</p>
-                <a href="#conocimientos" class="botón1">LO QUE HAGO</a>
+                <p class="descripcion ">Desarrolladora Frontend en proceso, dibujante, cinéfila.</p>
+                <a href="#conocimientos" class="boton1">LO QUE HAGO</a>
             </div>
 
             <div class="cajaimg1">
@@ -51,7 +51,8 @@
             </p>
         </div>
 
-        <div class="card1-conocimientos flexrow displayflex">
+        <div class="caja-cards">
+            <div class="card1-conocimientos flexrow displayflex">
             <article class="card displayflex">
                 <img class="imgcard1" src="https://image.flaticon.com/icons/png/512/226/226269.png" alt="html5">
                 <h3 class="h3-conocimientos">
@@ -103,6 +104,7 @@
                 </h3>
             </article>
         </div>
+    </div>
     </section>
 
 
@@ -137,7 +139,7 @@
                 atque tenetur magnam sapiente voluptate.</p>
         </div>
 
-        <div>
+        <div class="caja-cards-proyectos">
             <div class="card1-proyectos displayflex">
                 <a href="#aboutme" class="card-fila1 card-proyectos displayflex">
                     <img class="hola-img" src="./imgs/hola_img.png" alt="">
@@ -189,20 +191,25 @@
                         Colaboraciones
                     </h3>
                 </a>
-            </div>
-
-            <div class="card3-proyectos displayflex">
-                <a href="#aboutme" class="card-fila3 card-proyectos displayflex">
-                    <img class="calendario-img" src="./imgs/calendario_img.svg" alt="">
-
-                    <h3 class="h3-proyectos">
-                        Calendario online
-                    </h3>
-                </a>
-
 
             </div>
-        </div>
+           
+
+            </div>
+            <div class="caja-fila-3">
+                <div class="card3-proyectos displayflex">
+               
+                    <a href="#aboutme" class="card-fila3 card-proyectos displayflex">
+                        <img class="calendario-img" src="./imgs/calendario_img.svg" alt="">
+    
+                        <h3 class="h3-proyectos">
+                            Calendario online
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+
 
     </section>
 
@@ -220,6 +227,7 @@
 
 
                 <div class="lista-contacto">
+                    <div class="caja-contacto-1">
                     <a href="" class="links link-twitter"> <i
                             class="iconos-contacto fab fa-twitter"></i>@CarolinaAlmaraz
                     </a>
@@ -227,6 +235,9 @@
                     <a href="#aboutme" class="links link-git"> <i
                             class="iconos-contacto fab fa-github-alt"></i>CarolinaAlmaraz
                     </a>
+                </div>
+
+                <div class="caja-contacto-2">
 
                     <a href="#aboutme" class="links link-in"> <i
                             class="iconos-contacto fab fa-linkedin-in"></i>caroalmaraz
@@ -235,6 +246,7 @@
                     <a href="#aboutme" class="links link-mail"> <i
                             class="iconos-contacto fas fa-envelope"></i>carolinaalmaraz@gmail.com
                     </a>
+                </div>
 
                 </div>
             </article>
@@ -264,13 +276,13 @@
                         <label for="idEmail">E-mail *</label>
                         <br>
                         <input class="campo2" type="text" id="idEmail" name="email" autocomplete="off"
-                            placeholder="Ej.: hola@gmial.com">
+                            placeholder="Ej.: hola@gmail.com">
                     </div>
                     <br>
                     <div>
                         <label for="idMensaje">Mensaje *</label>
                         <br>
-                        <textarea class="campo3" id="idMensaje" name="mensaje" autocomplete="off"
+                        <textarea class="campo3" id="idMensaje" type=text name="mensaje" autocomplete="off"
                             placeholder="Escriba un mensaje aquí"></textarea>
                     </div>
                     <br>

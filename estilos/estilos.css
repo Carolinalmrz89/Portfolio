@@ -13,6 +13,7 @@
 /******************HEADER****************/
 
 header{
+    display: flex;
     justify-content: flex-end;
     width: 100%;
     height: 90px;
@@ -82,12 +83,14 @@ header{
 
 .aboutme{
     background-color:#eff0f1;
+    width: 100%;
     padding: 100px 90px 130px;
     justify-content: center;
     text-align: center;
 }
 
-.flexrow{
+.caja-aboutme{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -122,25 +125,30 @@ header{
     margin-bottom: 5px;
 }
 
-.descripción{
+.descripcion{
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #474646;
 }
 
-.botón1{
+.boton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     background-color: #c999af;
     color: white;
-    padding: 15px 40px;
+    width: 15vw;
+    height: 50px;
     border-radius: 100px;
     transition: 0.2s;
     cursor: pointer;
     font-weight: 500; 
+    font-size: 18px;
 }
 
-.botón1:hover{
+.boton1:hover{
     opacity: 0.8;
 }
 
@@ -161,6 +169,8 @@ header{
     background-color: #FFFFFF ;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 980px;
     padding:100px 200px 130px ;
     color: black;
 }
@@ -183,6 +193,11 @@ header{
 .p-conocimientos{
     width: 35%;
     margin-top: 20px;
+}
+
+.caja-cards{
+    display: flex;
+    flex-direction: column;
 }
 
 .card1-conocimientos{
@@ -293,7 +308,7 @@ header{
      background-color: #FFFFFF;
      width: 100%;
      height: 1450px;
-     padding:100px 100px 130px;
+     padding:100px 130px 130px;
  }
 
  .caja-proyectos{
@@ -301,6 +316,12 @@ header{
      align-items: center;
      text-align: center;
      width: 100%;
+ }
+
+ .caja-cards-proyectos{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
  }
 
  .h1-proyectos{
@@ -347,28 +368,28 @@ header{
     width: 350px;
  }
  .card-fila3{
-     
     height: 300px;
     width: 350px;
  }
 
  .card1-proyectos{
+    display: flex;
     flex-direction: row;
     padding-top: 70px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .card2-proyectos{
     flex-direction: row;
     padding-top: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .card3-proyectos{
     flex-direction: row;
     padding-top: 20px;
     justify-content:flex-start;
-    margin-left: 62px;
+    align-items: flex-start;
 }
 
 .hola-img{
@@ -483,12 +504,13 @@ a:active{
 .iconos-contacto{
     display: flex;
     align-items: center;
-    padding: 8px;
+    justify-content: center;
     color: #c999af;
     border: 1px solid  #FFFFFF;
     border-radius: 25px;
     width:35px;
     height: 35px;
+    padding: 9px;
 }
 .link-twitter{
     width: 210px;
@@ -519,8 +541,6 @@ a:active{
 }
 
 /*************SECTION CONTACTO ESCRIME***************/
-
-
 
 .escribime{
     display: flex;
@@ -563,28 +583,43 @@ label{
 .campo1{
     width: 200px;
     height: 40px;
-    background-color: #e9e7e7;
-    border: 1px solid #e9e7e7;
+    background-color: #EFF0F1;
+    border: 1px solid #EFF0F1;
     border-radius: 25px;
     margin-top: 10px;
+    outline: none;
 }
 
 .campo2{
     width: 464px;
     height: 40px;
-    background-color: #e9e7e7;
-    border: 1px solid #e9e7e7;
+    background-color: #EFF0F1;
+    border: 1px solid #EFF0F1;
     border-radius: 25px;
     margin-top: 10px;
+    outline: none;
 }
 
 .campo3{
     width: 464px; 
     height: 180px;
-    background-color: #e9e7e7;
-    border: 1px solid #e9e7e7;
+    background-color: #EFF0F1;
+    border: 1px solid #EFF0F1;
     border-radius: 25px;
     margin-top: 10px;
+    outline: none;
+}
+
+input[type=text]:focus{
+    border: 1px solid #c999af;
+    box-shadow: 0 0 12px 0#c999af;
+    
+}
+
+textarea[type=text]:focus{
+    border: 1px solid #c999af;
+    box-shadow: 0 0 12px 0#c999af;
+    
 }
 
 ::placeholder{
@@ -613,6 +648,7 @@ label{
     transition: 1s;
 }
 
+
 /*************SECTION FOOTER*************/
 
 footer{
@@ -628,6 +664,9 @@ footer{
 .link-footer{
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .link-footer:active{
@@ -650,6 +689,7 @@ footer{
     justify-content: center;
     font-size: 20px;
     width: 45px;
+    padding: 12px;
     height: 45px;
     border: 1px solid white;
     border-radius: 50%;
@@ -670,11 +710,220 @@ footer{
 }
 
 .heart-footer{
-    color:#E81224;
+    color:#cc1625;
     font-size: 20px;
 }
 
+/***********RESPONSIVE**********/
 
+@media screen and (max-width: 576px){
+    header{
+        display: none;
+    }
+
+    .aboutme{
+        padding: 15px;
+    }
+
+    .caja-aboutme{
+        width: 100%;
+        height: 900px;
+        display: flex;            flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+    }
+
+    .info{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 110px;
+    }
+    .nombre{
+        font-size: 50px;
+    }
+    .boton1{
+        width: 35vw;
+        padding: 10px;
+    } 
+    .cajaimg1{
+        width: 100%;
+        padding: 0;
+    }
+    .img1{
+        width: 100%;
+        max-width: 900px;
+        padding: 5px;
+        padding-bottom: 60px;
+    }
+
+    /******CONOCIMIENTOS******/
+
+    .conocimientos{
+        padding: 0;
+        margin-top: 70px;
+    }
+    .caja-conocimientos{
+        justify-content: space-between;
+        flex-direction: column;;
+        padding: 20px;
+    }
+    .p-conocimientos{
+        width: 70%;
+        margin-top: 30px;
+    }
+    .caja-cards{
+        padding: 10px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .card1-conocimientos{
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .card2-conocimientos{
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .card{
+        height: 200px;
+        width: 240px;
+        margin-top: 15px;
+    }
+
+    /*****SOMEONE*****/
+
+    .someone{
+        padding: 0; 
+    }
+    .caja-someone{
+        padding: 30px;
+    }
+    .main-someone{
+        margin-top: 40px;
+    }
+
+    /****PROYECTOS****/
+
+    .proyectos{
+        padding:10px;
+        margin-top: 80px;
+        height: 1370px;
+    }
+    .p-proyectos{
+        width: 80%;
+    }
+    .caja-cards-proyectos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+        padding-top: 50px;
+    }
+    .card1-proyectos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding:0;
+    }
+    .card2-proyectos{
+        flex-direction: column;
+        justify-content: space-around;
+        padding:0;
+    }
+    .card3-proyectos{
+        padding-top: 5px;
+    }
+    .card-fila1{
+        height: 260px;
+        width: 240px;
+        margin-top: 15px;
+     }
+     .card-fila2{
+        height: 260px;
+        width: 240px;
+        margin-top: 15px;
+     }
+     .card-fila3{
+        height: 240px;
+        width: 240px;
+        padding: 0;
+     }
+     .caja-fila-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 20px;
+        
+    }
+    .caja-contacto{
+        flex-direction: column;
+    
+    }
+    .escribime{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-left:0;
+        padding-top: 70px;
+        width: 50%;
+        height: 80%;
+    }
+
+    /*******CONTACTO******/
+    .contacto{
+        background-color:#EFF0F1;
+        width: 100%;
+        height: 1100px;
+        padding:0;
+    }
+    .caja-contacto{
+        flex-direction: column;
+        border: none; 
+        padding: 5px;
+    }
+    .contactame{
+        width: 100%;
+        height: 40%;
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+    .h1-contacto{
+        font-size: 45px;
+        font-weight: 900;
+    }
+    .p-contacto{
+        width: 70%;
+    }
+    .lista-contacto{
+        display: flex;
+        flex-direction: row;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+    .escribime{
+        padding-left: 30px;
+        padding-top: 5px;
+        width: 100%;
+        height: 60%;
+    }
+    .caja-menú{
+        display: none;
+    }
+        
+   
+}
 
 
 
