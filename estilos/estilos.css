@@ -588,6 +588,7 @@ label{
     border-radius: 25px;
     margin-top: 10px;
     outline: none;
+    position: relative;
 }
 
 .campo2{
@@ -613,7 +614,37 @@ label{
 input[type=text]:focus{
     border: 1px solid #c999af;
     box-shadow: 0 0 12px 0#c999af;
-    
+}
+input[type=text]:valid{
+    border: 1px solid green;
+    box-shadow: 0 0 5px 0 green;
+}
+/*
+input[type=email]:invalid{
+    border: 1px solid red;
+    box-shadow: 0 0 5px 0 red;
+}
+*/
+
+.valid{
+    display: none;
+    position: relative;
+    color: green;
+    right: 30px
+}
+
+.valid-mail{
+    display: none;
+    position: relative;
+    color: green;
+    right: 50px
+}
+
+.in-valid{
+    display: none;
+    position: relative;
+    color: red;
+    right: 30px
 }
 
 textarea[type=text]:focus{

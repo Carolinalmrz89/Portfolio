@@ -262,21 +262,26 @@
                             <label for="idNombre">Nombre *</label>
                             <br>
                             <input class="campo1" type="text" id="idNombre" name="nombre" autocomplete="off"
-                                placeholder="Ej.: Ada">
+                                placeholder="Ej.: Carolina" required>
+                                <i class="valid far fa-check-circle"></i>
                         </div>
                         <div class="form-apellido">
                             <label for="idApellido">Apellido *</label>
                             <br>
                             <input class="campo1" type="text" name="apellido" id="idApellido" autocomplete="off"
-                                placeholder="Ej.: Lovelace">
+                                placeholder="Ej.: Almaraz" required>
+                                <i class="valid far fa-check-circle"></i>
                         </div>
                     </div>
                     <br>
                     <div>
                         <label for="idEmail">E-mail *</label>
                         <br>
-                        <input class="campo2" type="text" id="idEmail" name="email" autocomplete="off"
-                            placeholder="Ej.: hola@gmail.com">
+                        <input class="campo2" type="email" id="idEmail" name="email" autocomplete="off"
+                            placeholder="Ej.: hola@gmail.com" required>
+                            <i class="in-valid far fa-times-circle"></i>
+
+                            <i class="valid-mail far fa-check-circle"></i>
                     </div>
                     <br>
                     <div>
