@@ -615,16 +615,26 @@ input[type=text]:focus{
     border: 1px solid #c999af;
     box-shadow: 0 0 12px 0#c999af;
 }
+
 input[type=text]:valid{
     border: 1px solid green;
     box-shadow: 0 0 5px 0 green;
 }
-/*
-input[type=email]:invalid{
+
+input[type=email]:focus{
+    border: 1px solid #c999af;
+    box-shadow: 0 0 12px 0#c999af;
+}
+
+input:invalid:not(:placeholder-shown){
     border: 1px solid red;
     box-shadow: 0 0 5px 0 red;
 }
-*/
+
+input[type=email]:valid{
+    border: 1px solid green;
+    box-shadow: 0 0 5px 0 green;
+}
 
 .valid{
     display: none;
@@ -644,13 +654,24 @@ input[type=email]:invalid{
     display: none;
     position: relative;
     color: red;
-    right: 30px
+    right: 30px;
+}
+
+input:valid ~ .valid {
+    display: inline;
+}
+
+input:valid ~ .valid-mail {
+    display: inline;
+}
+
+input:invalid:not(:placeholder-shown) ~ .in-valid {
+    display: inline;
 }
 
 textarea[type=text]:focus{
     border: 1px solid #c999af;
     box-shadow: 0 0 12px 0#c999af;
-    
 }
 
 ::placeholder{
