@@ -408,7 +408,6 @@ header {
   height: fit-content;
   border: 1px solid grey;
   border-radius: 8px;
-  
 }
 
 .contactame {
@@ -558,7 +557,7 @@ label {
 }
 
 .campo2 {
-  width:100%;
+  width: 100%;
   height: 40px;
   background-color: #eff0f1;
   border: 1px solid #eff0f1;
@@ -659,7 +658,7 @@ textarea[type="text"]:focus {
   padding: 10px;
 }
 
-.botón-enviar {
+.boton-enviar {
   font-size: 16px;
   background-color: #c999af;
   color: white;
@@ -668,14 +667,15 @@ textarea[type="text"]:focus {
   border-radius: 100px;
   transition: 0.2s;
   cursor: pointer;
+  border: 0;
 }
 
-.botón-enviar:hover {
+.boton-enviar:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
 
-.botón-enviar:active {
+.boton-enviar:active {
   border: 1px solid #d86d92;
   box-shadow: 0 0 29px 0 #d86d92;
   transition: 1s;
@@ -817,7 +817,7 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .card {
     height: 200px;
     width: 240px;
@@ -891,7 +891,6 @@ footer {
   .caja-contacto {
     flex-direction: column;
   }
- 
 
   /*******CONTACTO******/
   .contacto {
@@ -932,7 +931,7 @@ footer {
     height: fit-content;
   }
 
-  form{
+  form {
     width: 90%;
   }
   .caja-menú {
@@ -942,62 +941,59 @@ footer {
 
 /************MEDIA MIN 381 MAX 575***********/
 
-@media screen and (min-width: 381px) and (max-width: 575px){
+@media screen and (min-width: 381px) and (max-width: 575px) {
   .boton1 {
     width: 50vw;
     padding: 10px;
-}
-.caja-cards{
-  padding: 10px;
-  justify-content: space-around;
-}
-  .card{
+  }
+  .caja-cards {
+    padding: 10px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  .card {
     height: 155px;
     width: 155px;
     margin: 0 0 15px;
   }
-.caja-contacto{
-  height: fit-content;
-  
-}
+  .caja-contacto {
+    height: fit-content;
+  }
   .contactame {
-    
     height: fit-content;
     padding-left: 30px;
     padding-top: 50px;
-  margin-bottom: 20px;
-}
-.lista-contacto{
-  flex-direction: column;
-}
+    margin-bottom: 20px;
+  }
+  .lista-contacto {
+    flex-direction: column;
+  }
 
-.escribime{
-  height: fit-content;
-  margin-bottom: 20px;
-}
+  .escribime {
+    height: fit-content;
+    margin-bottom: 20px;
+  }
 
-form{
-  width: 90%;
-  height: fit-content;
-  margin-bottom: 30px;
-}
-.form-datos{
- flex-direction: column;
-  
-}
+  form {
+    width: 90%;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+  .form-datos {
+    flex-direction: column;
+  }
 
-.campo1{
-  width: 100%;
-}
-.form-nombre {
-  width: 100%;
-  
-}
+  .campo1 {
+    width: 100%;
+  }
+  .form-nombre {
+    width: 100%;
+  }
 
-.form-apellido{
-  width: 100%;
-  margin-left: 0;
-}
+  .form-apellido {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 /************MEDIA 380*******/
 
@@ -1024,7 +1020,6 @@ form{
   .proyectos {
     padding: 10px;
     margin-top: 80px;
-   
   }
 
   .caja-cards-proyectos {
@@ -1037,11 +1032,10 @@ form{
     padding-top: 50px;
   }
 
-  .card-proyectos{
-      height: 319px;
-      width: 340px;
+  .card-proyectos {
+    height: 319px;
+    width: 340px;
   }
-
 
   /***CONTACTO*/
 
@@ -1094,3 +1088,12 @@ form{
     width: 95%;
   }
 }
+
+/*****RESPONSIVE MIN 577 MAX 900*****
+
+@media screen and (min-width: 577px) and (max-width: 900px){
+  header{
+    display: none;
+  }
+}
+*/
