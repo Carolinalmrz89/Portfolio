@@ -997,7 +997,7 @@ footer {
 }
 /************MEDIA 380*******/
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 320px) and (max-width: 380px) {
   .boton1 {
     width: 45vw;
     padding: 10px;
@@ -1006,9 +1006,10 @@ footer {
   /*CONOCIMIENTOS*/
 
   .card {
-    height: 147px;
-    width: 150px;
-    margin-top: 15px;
+    height: 149px;
+    width: 153px;
+    margin: 0;
+    margin-bottom: 15px;
   }
 
   .h1-conocimientos {
@@ -1034,7 +1035,7 @@ footer {
 
   .card-proyectos {
     height: 319px;
-    width: 340px;
+    width: 300px;
   }
 
   /***CONTACTO*/
@@ -1048,6 +1049,7 @@ footer {
   }
 
   .lista-contacto {
+    display: flex;
     flex-direction: column;
   }
 
@@ -1073,11 +1075,13 @@ footer {
 
   .form-nombre {
     margin-right: 0;
+    width: 100%;
   }
 
   .form-apellido {
     padding-top: 20px;
     margin-left: 0;
+    width: 100%;
   }
 
   .campo2 {
