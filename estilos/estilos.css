@@ -318,7 +318,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 60px 70px;
+  margin-top: 70px;
 }
 
 .h1-proyectos {
@@ -405,9 +405,10 @@ header {
   flex-direction: row;
   background-color: #ffffff;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   border: 1px solid grey;
   border-radius: 8px;
+  
 }
 
 .contactame {
@@ -513,7 +514,8 @@ a:active {
   padding-left: 60px;
   padding-top: 70px;
   width: 50%;
-  height: 80%;
+  height: fit-content;
+  margin-bottom: 50px;
 }
 
 .h1-escribime {
@@ -533,19 +535,20 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
 }
 
 .form-nombre {
+  width: 45%;
   margin-right: 30px;
 }
 
 .form-apellido {
+  width: 45%;
   margin-left: 10px;
 }
 
 .campo1 {
-  width: 200px;
+  width: 100%;
   height: 40px;
   background-color: #eff0f1;
   border: 1px solid #eff0f1;
@@ -555,7 +558,7 @@ label {
 }
 
 .campo2 {
-  width: 464px;
+  width:100%;
   height: 40px;
   background-color: #eff0f1;
   border: 1px solid #eff0f1;
@@ -565,7 +568,7 @@ label {
 }
 
 .campo3 {
-  width: 464px;
+  width: 100%;
   height: 180px;
   background-color: #eff0f1;
   border: 1px solid #eff0f1;
@@ -888,22 +891,13 @@ footer {
   .caja-contacto {
     flex-direction: column;
   }
-  .escribime {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 0;
-    padding-top: 70px;
-    width: 50%;
-    height: 80%;
-  }
+ 
 
   /*******CONTACTO******/
   .contacto {
     background-color: #eff0f1;
     width: 100%;
-    height: 1100px;
+    height: fit-content;
     padding: 0;
   }
   .caja-contacto {
@@ -916,6 +910,7 @@ footer {
     height: 40%;
     padding-left: 30px;
     padding-top: 50px;
+    margin-bottom: 30px;
   }
   .h1-contacto {
     font-size: 45px;
@@ -934,13 +929,76 @@ footer {
     padding-left: 30px;
     padding-top: 5px;
     width: 100%;
-    height: 60%;
+    height: fit-content;
+  }
+
+  form{
+    width: 90%;
   }
   .caja-menú {
     display: none;
   }
 }
 
+/************MEDIA MIN 381 MAX 575***********/
+
+@media screen and (min-width: 381px) and (max-width: 575px){
+  .boton1 {
+    width: 50vw;
+    padding: 10px;
+}
+.caja-cards{
+  padding: 10px;
+  justify-content: space-around;
+}
+  .card{
+    height: 155px;
+    width: 155px;
+    margin: 0 0 15px;
+  }
+.caja-contacto{
+  height: fit-content;
+  
+}
+  .contactame {
+    
+    height: fit-content;
+    padding-left: 30px;
+    padding-top: 50px;
+  margin-bottom: 20px;
+}
+.lista-contacto{
+  flex-direction: column;
+}
+
+.escribime{
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+form{
+  width: 90%;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+.form-datos{
+ flex-direction: column;
+  
+}
+
+.campo1{
+  width: 100%;
+}
+.form-nombre {
+  width: 100%;
+  
+}
+
+.form-apellido{
+  width: 100%;
+  margin-left: 0;
+}
+}
 /************MEDIA 380*******/
 
 @media screen and (max-width: 380px) {
