@@ -653,6 +653,10 @@ textarea[type="text"]:focus {
   border: 1px solid #c999af;
   box-shadow: 0 0 12px 0#c999af;
 }
+textarea[type="text"]:valid {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 0 green;
+}
 
 ::placeholder {
   padding: 10px;
