@@ -1,340 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carolina Almaraz</title>
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <script src="https://kit.fontawesome.com/fc93a7f461.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fc93a7f461.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body class="paletaColores">
     <header>
-        <div class="headerderecha displayflex spacebetween">
-            <a href="#aboutme" class="margen15 botón botón-hola">HOLA</a>
-            <a href="#conocimientos" class="margen15 botón botón-conocimientos">CONOCIMIENTOS</a>
-            <a href="#proyectos" class="margen15 botón botón-proyectos">PROYECTOS</a>
-            <a href="#contacto" class="margen15 botón2">CONTACTO</a>
-        </div>
+      <a href="#aboutme" class="btn-principal">HOLA</a>
+      <a href="#conocimientos" class="btn-principal">CONOCIMIENTOS</a>
+      <a href="#proyectos" class="btn-principal">PROYECTOS</a>
+      <a href="#contacto" class="btn-contacto">CONTACTO</a>
     </header>
 
-
-    <a name="aboutme"></a>
+    <!------ SECTION ABOUT ME ------>
     <section class="aboutme">
-        <div class=" displayflex caja-aboutme spacebetween">
-            <div class="info">
-                <h2 class="holasoy">¡Hola! Soy</h2>
-                <h1 class="nombre">Carolina Almaraz</h1>
-                <p class="descripcion ">Desarrolladora Frontend en proceso, dibujante, cinéfila.</p>
-                <a href="#conocimientos" class="boton1">LO QUE HAGO</a>
+      <a name="aboutme"></a>
+      <div class="info">
+        <h2>¡Hola! Soy</h2>
+        <h1 class="nombre">Carolina Almaraz</h1>
+        <p class="descripcion">
+          Desarrolladora Frontend en proceso, dibujante, cinéfila.
+        </p>
+        <a href="#conocimientos" class="btn-aboutme">LO QUE HAGO</a>
+      </div>
+
+      <div class="caja-img-aboutme">
+        <img class="img-aboutme" src="./imgs/prueba4.svg" alt="presentación" />
+      </div>
+    </section>
+
+    <!------ SECTION CONOCIMIENTOS ------>
+    <section class="conocimientos">
+      <a name="conocimientos"></a>
+      <h1>Mis conocimientos</h1>
+
+      <p class="p-conocimientos">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque
+        neque molestias consequuntur vel ab quas architecto.
+      </p>
+
+      <div class="caja-cards">
+        <article class="card-conocimientos">
+          <div class="imgcard">
+            <img
+              class="img-conocimientos"
+              src="https://image.flaticon.com/icons/png/512/226/226269.png"
+              alt="html5"
+            />
+          </div>
+          <h3>HTML 5</h3>
+        </article>
+
+        <article class="card-conocimientos">
+          <div class="imgcard">
+            <img
+              class="img-conocimientos"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+              alt="css3"
+            />
+          </div>
+          <h3>CSS 3</h3>
+        </article>
+
+        <article class="card-conocimientos">
+          <div class="imgcard">
+            <img
+              class="img-conocimientos"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+              alt="sass"
+            />
+          </div>
+          <h3>Sass</h3>
+        </article>
+
+        <article class="card-conocimientos">
+          <div class="imgcard">
+            <img
+              class="img-conocimientos"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+              alt="js"
+            />
+          </div>
+          <h3>JavaScript</h3>
+        </article>
+
+        <article class="card-conocimientos">
+          <div class="imgcard">
+            <img
+              class="img-conocimientos"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+              alt="react"
+            />
+          </div>
+          <h3>React</h3>
+        </article>
+
+        <article class="card-conocimientos">
+          <div class="imgcard">
+            <img
+              class="img-conocimientos"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+              alt="git"
+            />
+          </div>
+          <h3>GIT</h3>
+        </article>
+      </div>
+    </section>
+
+    <!------ SECTION SOMEONE ------>
+    <section class="someone">
+      <article>
+        <i class="quote fas fa-quote-right"></i>
+      </article>
+
+      <article class="main-someone">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nemo,
+        impedit id facilis ea magnam possimus eum suscipit perferendis dolorem
+        alias sed autem dolores dignissimos sequi rem deleniti est neque.
+      </article>
+
+      <article class="footer-someone">Someone</article>
+    </section>
+
+    <!------ SECTION PROYECTOS ------>
+    <section class="proyectos">
+      <a name="proyectos"></a>
+
+      <h1>Mis proyectos</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+        blanditiis, nostrum corporis quo saepe, nisi vel tempora aperiam quaerat
+        non omnis delectus perferendis unde optio atque tenetur magnam sapiente
+        voluptate.
+      </p>
+
+      <div class="caja-cards-proyectos">
+        <a href="#aboutme" class="card-proyectos">
+          <img class="hola-img" src="./imgs/prueba4.svg" alt="" />
+
+          <h3>Portfolio</h3>
+        </a>
+
+        <a href="#aboutme" class="card-proyectos">
+          <img class="editor-img" src="./imgs/editor.svg" alt="" />
+
+          <h3>Editor de memes</h3>
+        </a>
+        <!-- #c999af
+        #7FAA96 -->
+        <a href="#aboutme" class="card-proyectos">
+          <img class="mapas-img" src="./imgs/mapa_rutas_img.svg" alt="" />
+
+          <h3>Mapa de rutas</h3>
+        </a>
+
+        <a href="#aboutme" class="card-proyectos">
+          <img class="tea-img" src="./imgs/tea_img.svg" alt="" />
+
+          <h3>Tea shop</h3>
+        </a>
+
+        <a href="aboutme" class="card-proyectos">
+          <img class="moviles-img" src="./imgs/apps_moviles_img.svg" alt="" />
+
+          <h3>Aplicaciones móviles</h3>
+        </a>
+
+        <a href="#aboutme" class="card-proyectos">
+          <img class="colab-img" src="./imgs/colaboraciones_img.svg" alt="" />
+
+          <h3>Colaboraciones</h3>
+        </a>
+
+        <a href="#aboutme" class="card-proyectos">
+          <img class="calendario-img" src="./imgs/calendario_img.svg" alt="" />
+
+          <h3>Calendario online</h3>
+        </a>
+      </div>
+    </section>
+
+    <!--------------- SECTION CONTACTO -------------->
+    <section class="contacto">
+      <a name="contacto"></a>
+      <div class="caja-contacto">
+        <!--------------- CONTACTAME -------------->
+        <article class="contactame">
+          <h1>Contactame</h1>
+
+          <p class="p-contacto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
+            nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam
+            hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam
+            eligendi.
+          </p>
+
+          <div class="lista-contacto">
+            <div class="caja-contacto-1">
+              <a href="" class="links link-twitter">
+                <i class="iconos-contacto fab fa-twitter"></i>@CarolinaAlmaraz
+              </a>
+
+              <a href="#aboutme" class="links link-git">
+                <i class="iconos-contacto fab fa-github-alt"></i>CarolinaAlmaraz
+              </a>
             </div>
 
-            <div class="cajaimg1">
-                <img class="img1" src="./imgs/aboutme2_img.svg" alt="presentación">
+            <div class="caja-contacto-2">
+              <a href="#aboutme" class="links link-in">
+                <i class="iconos-contacto fab fa-linkedin-in"></i>caroalmaraz
+              </a>
+
+              <a href="#aboutme" class="links link-mail">
+                <i class="iconos-contacto fas fa-envelope"></i
+                >carolinaalmaraz@gmail.com
+              </a>
             </div>
-        </div>
+          </div>
+        </article>
+
+        <!--------------- ESCRIBIME -------------->
+        <article class="escribime">
+          <h1>Escribime</h1>
+
+          <form>
+            <div class="form-datos">
+              <div class="nombre-apellido">
+                <label for="idNombre">Nombre *</label>
+                
+                <input
+                  class="campo1"
+                  type="text"
+                  id="idNombre"
+                  name="nombre"
+                  autocomplete="off"
+                  placeholder="Ej.: Carolina"
+                  required
+                />
+
+                <!-- <i class="valid-name far fa-check-circle"></i> -->
+              </div>
+
+              <div class="nombre-apellido">
+                <label for="idApellido">Apellido *</label>
+                <input
+                  type="text"
+                  name="apellido"
+                  id="idApellido"
+                  autocomplete="off"
+                  placeholder="Ej.: Almaraz"
+                  required
+                />
+
+                <!-- <i class="valid-lastname far fa-check-circle"></i> -->
+              </div>
+            </div>
+            
+            <div>
+              <label for="idEmail">E-mail *</label>
+              <input
+                type="email"
+                id="idEmail"
+                name="email"
+                autocomplete="off"
+                placeholder="Ej.: hola@gmail.com"
+                required
+              />
+
+              <!-- <i class="in-valid far fa-times-circle"></i> -->
+              <!-- <i class="valid-mail far fa-check-circle"></i> -->
+            </div>
+            
+            <div>
+              <label for="idMensaje">Mensaje *</label>
+              <textarea
+                id="idMensaje"
+                type="text"
+                name="mensaje"
+                autocomplete="off"
+                placeholder="Escriba un mensaje aquí"
+              ></textarea>
+            </div>
+            
+            <input class="boton-enviar" type="submit" value="Enviar" />
+          </form>
+        </article>
+      </div>
     </section>
-
-
-    <section class="conocimientos displayflex">
-        <a name="conocimientos"></a>
-        <div class="displayflex caja-conocimientos spacebetween">
-            <h1 class="h1-conocimientos">
-                Mis conocimientos
-            </h1>
-
-            <p class="p-conocimientos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel
-                ab quas architecto.
-            </p>
-        </div>
-
-        <div class="caja-cards">
-            <article class="card displayflex">
-                <div class="imgcard">
-                    <img class="imgcard1" src="https://image.flaticon.com/icons/png/512/226/226269.png" alt="html5">
-                </div>
-                <h3 class="h3-conocimientos">
-                    HTML 5
-                </h3>
-            </article>
-
-            <article class="card displayflex">
-                <div class="imgcard">
-                    <img class="imgcard2"
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-                        alt="css3">
-                </div>
-                <h3 class="h3-conocimientos">
-                    CSS 3
-                </h3>
-            </article>
-
-            <article class="card displayflex">
-                <div class="imgcard">
-                    <img class="imgcard3"
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-                        alt="sass">
-                </div>
-                <h3 class="h3-conocimientos">
-                    Sass
-                </h3>
-            </article>
-
-            <article class="card displayflex">
-                <div class="imgcard">
-                    <img class="imgcard4"
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
-                        alt="js">
-                </div>
-                <h3 class="h3-conocimientos">
-                    JavaScript
-                </h3>
-            </article>
-
-            <article class="card displayflex">
-                <div class="imgcard">
-                    <img class="imgcard5"
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-                        alt="react">
-                </div>
-                <h3 class="h3-conocimientos">
-                    React
-                </h3>
-            </article>
-
-            <article class="card displayflex">
-                <div class="imgcard">
-                    <img class="imgcard6"
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
-                        alt="git">
-                </div>
-                <h3 class="h3-conocimientos">
-                    GIT
-                </h3>
-            </article>
-        </div>
-    </section>
-
-
-    <section class="someone displayflex">
-        <div class="caja-someone displayflex">
-            <article>
-                <i class="quote fas fa-quote-right"></i>
-            </article>
-
-            <article class="main-someone">
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nemo, impedit id facilis ea magnam
-                possimus eum suscipit perferendis dolorem alias sed autem dolores dignissimos sequi rem deleniti est
-                neque.
-
-            </article>
-
-            <article class="footer-someone">
-                Someone
-            </article>
-        </div>
-    </section>
-
-
-    <section class="proyectos displayflex">
-        <a name="proyectos"></a>
-        <div class="caja-proyectos displayflex spacebetween">
-            <h1 class="h1-proyectos">Mis proyectos</h1>
-
-            <p class="p-proyectos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, blanditiis,
-                nostrum corporis quo saepe, nisi vel tempora aperiam quaerat non omnis delectus perferendis unde optio
-                atque tenetur magnam sapiente voluptate.</p>
-        </div>
-
-        <div class="caja-cards-proyectos">
-            <a href="#aboutme" class="card-proyectos displayflex">
-                <img class="hola-img" src="./imgs/hola_img.png" alt="">
-
-                <h3 class="h3-proyectos">
-                    Portafolio
-                </h3>
-            </a>
-
-            <a href="#aboutme" class="card-proyectos  displayflex">
-                <img class="social-img" src="./imgs/Social_ideas_img.svg" alt="">
-
-                <h3 class="h3-proyectos">
-                    Redes sociales
-                </h3>
-            </a>
-
-            <a href="#aboutme" class="card-proyectos displayflex">
-                <img class="mapas-img" src="./imgs/mapa_rutas_img.svg" alt="">
-
-                <h3 class="h3-proyectos">
-                    Mapa de rutas
-                </h3>
-            </a>
-
-            <a href="#aboutme" class="card-proyectos
-                displayflex">
-                <img class="tea-img" src="./imgs/tea_img.svg" alt="">
-
-                <h3 class="h3-proyectos">
-                    Tea shop
-                </h3>
-            </a>
-
-            <a href="aboutme" class="card-proyectos displayflex">
-                <img class="moviles-img" src="./imgs/apps_moviles_img.svg" alt="">
-
-                <h3 class="h3-proyectos">
-                    Aplicaciones móviles
-                </h3>
-            </a>
-
-            <a href="#aboutme" class="card-proyectos displayflex">
-                <img class="colab-img" src="./imgs/colaboraciones_img.svg" alt="">
-
-                <h3 class="h3-proyectos">
-                    Colaboraciones
-                </h3>
-            </a>
-
-            <a href="#aboutme" class="card-proyectos displayflex">
-                <img class="calendario-img" src="./imgs/calendario_img.svg" alt="">
-
-                <h3 class="h3-proyectos">
-                    Calendario online
-                </h3>
-            </a>
-        </div>
-
-    </section>
-
-
-    <a name="contacto"></a>
-    <section class="contacto displayflex">
-
-        <div class="caja-contacto displayflex">
-            <article class="contactame">
-                <h1 class="h1-contacto">Contactame</h1>
-
-                <p class="p-contacto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis
-                    voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates,
-                    ipsam, tempora eaque numquam eligendi.</p>
-
-
-                <div class="lista-contacto">
-                    <div class="caja-contacto-1">
-                        <a href="" class="links link-twitter"> <i
-                                class="iconos-contacto fab fa-twitter"></i>@CarolinaAlmaraz
-                        </a>
-
-                        <a href="#aboutme" class="links link-git"> <i
-                                class="iconos-contacto fab fa-github-alt"></i>CarolinaAlmaraz
-                        </a>
-                    </div>
-
-                    <div class="caja-contacto-2">
-
-                        <a href="#aboutme" class="links link-in"> <i
-                                class="iconos-contacto fab fa-linkedin-in"></i>caroalmaraz
-                        </a>
-
-                        <a href="#aboutme" class="links link-mail"> <i
-                                class="iconos-contacto fas fa-envelope"></i>carolinaalmaraz@gmail.com
-                        </a>
-                    </div>
-
-                </div>
-            </article>
-
-
-            <article class="escribime">
-
-                <h1 class="h1-escribime">Escribime</h1>
-
-                <form>
-                    <div class="form-datos">
-                        <div class="form-nombre">
-                            <label for="idNombre">Nombre *</label>
-                            <br>
-                            <input class="campo1" type="text" id="idNombre" name="nombre" autocomplete="off"
-                                placeholder="Ej.: Carolina" required>
-
-                            <!-- <i class="valid-name far fa-check-circle"></i> -->
-
-                        </div>
-                        <div class="form-apellido">
-                            <label for="idApellido">Apellido *</label>
-                            <br>
-                            <input class="campo1" type="text" name="apellido" id="idApellido" autocomplete="off"
-                                placeholder="Ej.: Almaraz" required>
-
-                            <!-- <i class="valid-lastname far fa-check-circle"></i> -->
-
-                        </div>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="idEmail">E-mail *</label>
-                        <br>
-                        <input class="campo2" type="email" id="idEmail" name="email" autocomplete="off"
-                            placeholder="Ej.: hola@gmail.com" required>
-
-                        <!-- <i class="in-valid far fa-times-circle"></i> -->
-
-                        <!-- <i class="valid-mail far fa-check-circle"></i> -->
-
-                    </div>
-                    <br>
-                    <div>
-                        <label for="idMensaje">Mensaje *</label>
-                        <br>
-                        <textarea class="campo3" id="idMensaje" type=text name="mensaje" autocomplete="off"
-                            placeholder="Escriba un mensaje aquí"></textarea>
-                    </div>
-                    <br>
-                    <input class="boton-enviar" type="submit" value="Enviar">
-
-                </form>
-
-            </article>
-        </div>
-    </section>
-
 
     <footer>
-        <div class="displayflex caja-menú">
-            <a href="#aboutme" class="link-footer">HOLA</a>
-            <a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a>
-            <a href="#proyectos" class="link-footer">PROYECTOS</a>
-            <a href="#contacto" class="link-footer">CONTACTO</a>
-        </div>
+      <div class="caja-menú">
+        <a href="#aboutme" class="link-footer">HOLA</a>
+        <a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a>
+        <a href="#proyectos" class="link-footer">PROYECTOS</a>
+        <a href="#contacto" class="link-footer">CONTACTO</a>
+      </div>
 
-        <div class="displayflex caja-iconos">
-            <a href="https://twitter.com/" target="_blank" class="link-footer">
-                <i class="iconos-footer fab fa-twitter"></i>
-            </a>
+      <div class="caja-iconos">
+        <a href="https://twitter.com/" target="_blank" class="link-footer">
+          <i class="iconos-footer fab fa-twitter"></i>
+        </a>
 
-            <a href="https://github.com/Carolinalmrz89" target="_blank" class="link-footer">
-                <i class="iconos-footer fab fa-github-alt"></i>
-            </a>
+        <a href="https://github.com/Carolinalmrz89" target="_blank" class="link-footer">
+          <i class="iconos-footer fab fa-github-alt"></i>
+        </a>
 
-            <a href="https://www.linkedin.com/in/carolina-almaraz-8972a9205/" target="_blank" class="link-footer">
-                <i class="iconos-footer fab fa-linkedin-in"></i>
-            </a>
+        <a href="https://www.linkedin.com/in/carolina-almaraz-8972a9205/" target="_blank" class="link-footer">
+          <i class="iconos-footer fab fa-linkedin-in"></i>
+        </a>
 
-            <a href="#aboutme" class="link-footer">
-                <i class="iconos-footer fas fa-envelope"></i>
-            </a>
-        </div>
+        <a href="#aboutme" class="link-footer">
+          <i class="iconos-footer fas fa-envelope"></i>
+        </a>
+      </div>
 
-        <div class="displayflex">
-            <p class="p-footer">Hecho con <i class="fas fa-heart heart-footer"></i> por Carolina Almaraz</p>
-        </div>
-
+      <div class="displayflex">
+        <p class="p-footer">
+          Hecho con <i class="fas fa-heart heart-footer"></i> por Carolina
+          Almaraz
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
