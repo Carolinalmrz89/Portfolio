@@ -43,6 +43,7 @@ header {
   padding: 20px;
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: white;
   box-shadow: 0 0 29px 0 rgba(56, 31, 31, 0.25);
 }
@@ -426,6 +427,7 @@ a:active {
 }
 
 form {
+  width: 100%;
   padding-top: 35px;
   padding-right: 15px;
 }
@@ -485,53 +487,44 @@ input[type="email"]:valid {
   box-shadow: 0 0 5px 0 green;
 }
 
-/*.valid-name{
-    display: none;
-    position: relative;
-    color: green;
-    left: 170px;
-    bottom: 28px;
+.container-input{
+  display: flex;
+  position: relative;
+}
+
+.valid-name{
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  font-size: 14px;
+  color: green;
+  visibility: hidden;
 }
 
 .valid-lastname{
-    display: none;
-    position: relative;
-    color: green;
-    left: 170px;
-    bottom: 28px;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  font-size: 14px;
+  color: green;
+  visibility: hidden;
 }
-
+.invalid-mail{
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
+}
 .valid-mail{
-    display: none;
-    position: relative;
-    color: green;
-    left: 440px;
-    bottom: 30px;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  font-size: 14px;
+  color: green;
+  visibility: hidden;
 }
-
-.in-valid{
-    display: none;
-    position: relative;
-    color: red;
-    right: 30px;
-}
-
-input:valid ~ .valid-name {
-    display: block;
-}
-
-input:valid ~ .valid-lastname {
-    display: block;
-}
-
-input:valid ~ .valid-mail {
-    display: block
-}
-
-input:invalid:not(:placeholder-shown) ~ .in-valid {
-    display: inline;
-}
-*/
 
 textarea[type="text"]:focus {
   border: 1px solid var(--colorPrincipal);
@@ -616,8 +609,8 @@ footer {
 }
 
 .heart-footer {
-  color: #cc1625;
-  font-size: 20px;
+  color: var(--colorSecundario);
+  font-size: 16px;
 }
 
 /***********RESPONSIVE**********/
@@ -875,7 +868,7 @@ form{
 }
 
 footer{
-  height: 15em;
+  height: 10em;
 }
 .p-footer {
   font-size: 14px;

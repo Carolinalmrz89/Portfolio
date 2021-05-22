@@ -42,8 +42,7 @@
       <h1>Mis conocimientos</h1>
 
       <p class="p-conocimientos">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque
-        neque molestias consequuntur vel ab quas architecto.
+        Estos son algunos de los lenguajes que utilizo
       </p>
 
       <div class="caja-cards">
@@ -235,48 +234,52 @@
             <div class="form-datos">
               <div class="nombre-apellido">
                 <label for="idNombre">Nombre *</label>
-                
+                <div class="container-input">
                 <input
                   class="campo1"
                   type="text"
-                  id="idNombre"
+                  id="nombre"
                   name="nombre"
                   autocomplete="off"
                   placeholder="Ej.: Carolina"
                   required
+                  minlength="3"
                 />
 
-                <!-- <i class="valid-name far fa-check-circle"></i> -->
+                <i class="valid-name far fa-check-circle"></i> </div>
               </div>
 
               <div class="nombre-apellido">
-                <label for="idApellido">Apellido *</label>
+                <label for="apellido">Apellido *</label>
+                <div class="container-input">
                 <input
                   type="text"
                   name="apellido"
-                  id="idApellido"
+                  id="apellido"
                   autocomplete="off"
                   placeholder="Ej.: Almaraz"
                   required
+                  minlength="4"
                 />
 
-                <!-- <i class="valid-lastname far fa-check-circle"></i> -->
+                <i class="valid-lastname far fa-check-circle"></i> </div>
               </div>
             </div>
             
             <div>
               <label for="idEmail">E-mail *</label>
+              <div class="container-input">
               <input
                 type="email"
-                id="idEmail"
+                id="email"
                 name="email"
                 autocomplete="off"
                 placeholder="Ej.: hola@gmail.com"
                 required
               />
 
-              <!-- <i class="in-valid far fa-times-circle"></i> -->
-              <!-- <i class="valid-mail far fa-check-circle"></i> -->
+             <i class="invalid-mail far fa-times-circle"></i> 
+              <i class="valid-mail far fa-check-circle"></i> </div>
             </div>
             
             <div>
@@ -329,5 +332,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
