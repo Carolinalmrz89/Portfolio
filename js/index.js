@@ -34,9 +34,9 @@ inputEmail.addEventListener("input", () =>{
 });
 
 inputEmail.addEventListener("input", () =>{
-    if(inputEmail.validity.valid == false){
-        invalidMail.style.visibility = "visible";
+    if(!inputEmail.validity.valid){
+        invalidMail.classList.remove("ocultar-icono");
     }else{
-        invalidMail.style.visibility = "hidden";
+        invalidMail.classList.add("ocultar-icono");
     }
 });
