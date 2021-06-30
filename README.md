@@ -7,7 +7,6 @@ Este proyecto lo realicé siguiendo el modelo propuesto por AdaITW, academia en 
 A demás de tener acceso a todos los proyectos que hago, vas a encontrar los lenguajes con los cuales trabajo y también los medios para ponernos en contacto.
 
 
-____________________________________________________________________________
 ## Website
 [Click aquí para ver portfolio](https://caroalmaraz.netlify.app/)
 ____________________________________________________________________________
