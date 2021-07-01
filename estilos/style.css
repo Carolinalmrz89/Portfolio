@@ -256,7 +256,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f2f2f287;
+  background-color: #dadada87;
   width: 100%;
   height: fit-content;
   padding: 100px 130px;
@@ -277,7 +277,7 @@ h2 {
   align-items: center;
   background-color: white;
   color: black;
-  border: 1px solid rgb(209 209 209);
+  border: 2px solid rgb(209 209 209);
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
@@ -669,6 +669,11 @@ footer {
     height: fit-content;
   }
 
+  .card-conocimientos{
+    width: 12.25em;
+    height: 11.375em;
+  }
+
   .p-conocimientos {
     width: 80%;
   }
@@ -682,6 +687,10 @@ footer {
   .someone {
     padding: 20px;
   }
+
+  .main-someone {
+    width: 75%;
+}
 
   /****PROYECTOS****/
 
