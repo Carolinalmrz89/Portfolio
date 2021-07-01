@@ -13,7 +13,6 @@
 body.paletaColores{
   --colorPrincipal: #7FAA96;
   --colorSecundario: #F1C7A8;
-
 }
 
 body{
@@ -21,8 +20,7 @@ body{
 }
 
 h1{
-    font-size: 45px;
-    font-weight: 900;
+    font-size: 38px;
 }
 
 p{
@@ -183,7 +181,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--colorPrincipal);
   border: 1px solid rgb(209 209 209);
   border-radius: 8px;
   margin: 0 15px;
@@ -194,7 +192,8 @@ h2 {
 }
 
 .card-conocimientos:hover {
-  color: var(--colorSecundario);
+  color: white;
+  background-color: var(--colorSecundario);
   border-color: var(--colorSecundario);
   transition: 0.2s;
 }
@@ -207,6 +206,10 @@ h2 {
 
 .img-conocimientos{
   max-width: 100%;
+}
+
+.i-conocimientos{
+  font-size: 80px;
 }
 
 /*************SECTION SOMEONE***************/

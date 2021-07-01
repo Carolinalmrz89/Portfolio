@@ -21,8 +21,8 @@ ____________________________________________________________________________
 ## Realizado con:
 * HTML5
 * CSS3
-* GIT
 * JAVASCRIPT
+* GIT
 * Deploy en NETLIFY
 
 ## Recursos:
