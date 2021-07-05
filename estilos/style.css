@@ -762,6 +762,10 @@ footer {
     font-size: 30px;
   }
 
+  h2 {
+    font-size: 26px;
+}
+
   p{
     width: 90%;
   }
@@ -771,12 +775,17 @@ footer {
     padding: 20px;
   }
 
-  .nombre{
-    font-size: 45px ;
-  }
+  .nombre {
+    font-size: 28px;
+    font-weight: 600;
+}
 
   .caja-img-aboutme {
     padding: 20px ;
+}
+
+.img-aboutme {
+  margin-bottom: 20px;
 }
 
   .btn-aboutme {
