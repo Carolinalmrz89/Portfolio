@@ -11,6 +11,7 @@
 }
 
 body.paletaColores{
+  /* siempre con guiones, no camelCase */
   --colorPrincipal: #7FAA96;
   --colorSecundario: #F1C7A8;
 }
@@ -248,6 +249,7 @@ h2 {
 .footer-someone {
   font-size: 30px;
   font-weight: 700;
+  /* no dejes codigo comentado en una entrega */
   /* margin-top: 40px;
   margin-bottom: 20px; */
 }
@@ -261,6 +263,7 @@ h2 {
   align-items: center;
   text-align: center;
   background-color: rgb(244 244 244);
+  /* innecesario */
   width: 100%;
   height: fit-content;
   padding: 100px 130px;
@@ -295,6 +298,10 @@ h2 {
   border: 2px solid var(--colorSecundario);
   transition: 0.3s;
 }
+
+/* todos estos elementos deberian tener la misma clase, no me gusta la idea de 
+darles width: 100% a todas y despues contradecir la orden en cada una de las tarjetas
+Mejor darle un padding a la tarjeta contenedora y dejarle width: 100% a todas las imagenes.  */
 
 .hola-img {
   width: 100%;
@@ -344,9 +351,12 @@ h2 {
 
 .caja-contacto {
   display: flex;
+  /* innecesario, es el estilo por defecto */
   flex-direction: row;
   background-color: #ffffff;
+  /* innecesario */
   width: 100%;
+  /* innecesario */
   height: fit-content;
   border: 2px solid var(--colorPrincipal);
   border-radius: 8px;
@@ -358,6 +368,7 @@ h2 {
   padding-left: 60px;
   padding-top: 70px;
   width: 50%;
+  /* innecesario */
   height: 80%;
 }
 
@@ -389,6 +400,7 @@ h2 {
   transition: 0, 4s;
 }
 
+/* mejor darle un width al contenedor antes que a cada elemento en particular */
 .link-twitter {
   width: 210px;
 }
@@ -441,6 +453,7 @@ a:active {
 }
 
 form {
+  /* innecesario */
   width: 100%;
   padding-top: 35px;
   padding-right: 15px;
@@ -452,6 +465,7 @@ label {
 
 .form-datos {
   display: flex;
+  /* innecesario */
   flex-direction: row;
   justify-content: space-between;
 }
@@ -565,10 +579,16 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  /* innecesario */
   width: 100%;
+  /* si agregamos texto a tu footer, puede pasar que rebalse, porque aca damos un height fijo
+  si queres espaciado, y por eso agregas height, eso se resuelve con margin y padding. 
+  el height fijo es peligroso y deberiamos usarlo solo en elementos especificos (tarjetas x ejemplo) */
   height: 20em;
   background-color: var(--colorPrincipal);
 }
+
+/* aca podrias reutilizar la clase displayFlex */
 .caja-menú {
   display: flex;
 } 
@@ -585,7 +605,7 @@ footer {
   box-shadow: 0 0 35px 0 white;
   border-radius: 25px;
 }
-
+/* aca podrias reutilizar la clase displayFlex */
 .caja-iconos {
   display: flex;
 }
@@ -802,7 +822,7 @@ footer {
   margin-top: 40px;
   padding: 0;
 }
-
+/* ojo con el tabulado a partir de aqui */
 .card-conocimientos{
   width: 8em;
   height: 8em;
