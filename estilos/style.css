@@ -13,6 +13,7 @@
 body.paletaColores{
   --colorPrincipal: #7FAA96;
   --colorSecundario: #F1C7A8;
+  --colorTexto: #5C555F;
 }
 
 body{
@@ -102,7 +103,7 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 110px 40px;
+  padding: 50px 40px;
   line-height: 1.9;
   width: 55%;
 }
@@ -149,18 +150,18 @@ h2 {
 
 .caja-img-aboutme {
   width: 45%;
-  padding: 110px 40px 130px;
+  padding: 60px  ;
 }
 
 .img-aboutme {
   width: 100%;
   max-width: 550px;
+  border-radius: 50%;
 }
 
 /**************SECTION CONOCIMIENTOS*************/
 
 .conocimientos {
-  background-color:rgb(244 244 244);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,7 +171,7 @@ h2 {
   width: 100%;
   height: fit-content;
   padding: 60px 70px;
-  color: black;
+  color: var(--colorTexto);
 }
 
 .caja-cards {
@@ -178,6 +179,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 50px 30px;
+  width: 80%;
 }
 
 .card-conocimientos{
@@ -186,17 +188,17 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: var(--colorPrincipal);
+  color: black;
   border: 1px solid rgb(209 209 209);
   border-radius: 8px;
   margin: 0 15px;
   cursor: pointer;
-  width: 16.25em;
-  height: 14.375em;
+  width: 10em;
+  height: 10em;
   margin-bottom: 25px;
 }
 
 .card-conocimientos:hover {
-  color: white;
   background-color: var(--colorSecundario);
   border-color: var(--colorSecundario);
   transition: 0.2s;
@@ -216,41 +218,18 @@ h2 {
   font-size: 80px;
 }
 
-/*************SECTION SOMEONE***************/
-
-.someone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-evenly;
-  line-height: 1.6;
-  color: black;
-  background-color: var(--colorSecundario);
+.img-bulma {
   width: 100%;
-  height: 25em;
-  padding: 30px 250px;
 }
 
-.quote {
-  font-size: 70px;
-  font-weight: 800;
+.img-mui {
+  width: 100%;
 }
 
-.main-someone {
-  border: 3px solid white;
-  padding: 30px;
-  width: 60%;
-  line-height: 1.8;
-  font-weight: 500;
+.img-responsive {
+  width: 100%;
 }
 
-.footer-someone {
-  font-size: 30px;
-  font-weight: 700;
-  /* margin-top: 40px;
-  margin-bottom: 20px; */
-}
 
 /************SECTION PROYECTOS************/
 
@@ -260,18 +239,17 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(244 244 244);
   width: 100%;
   height: fit-content;
-  padding: 100px 130px;
-  color: black;
+  padding: 30px 130px;
+  color: var(--colorTexto);
 }
 
 .caja-cards-proyectos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 70px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .card-proyectos {
@@ -280,14 +258,19 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  color: black;
+  color:var(--colorTexto);
   border: 2px solid var(--colorPrincipal);
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
-  height: 21.75em;
-  width: 21.375em;
-  margin-bottom: 30px;
+  height:16em;
+  width: 16em;
+  margin: 30px;
+}
+
+.card-proyectos h2 {
+  font-size: 14px;
+  color: var(--colorPrincipal);
 }
 
 .card-proyectos:hover {
@@ -296,42 +279,10 @@ h2 {
   transition: 0.3s;
 }
 
-.hola-img {
+.img-proyectos {
   width: 100%;
-  max-width: 18em;
+  padding: 8px;
 }
-
-.editor-img {
-  width: 100%;
-  padding-top: 38px;
-  max-width: 17.375em;
-}
-
-.mapas-img {
-  width: 100%;
-  max-width: 20em;
-}
-
-.colab-img {
-  width: 100%;
-  max-width: 13.75em;
-}
-
-.moviles-img {
-  width: 100%;
-  max-width: 16.25em;
-}
-
-.tea-img {
-  width: 100%;
-  max-width: 12.5em;
-}
-
-.calendario-img {
-  width: 100%;
-  max-width: 15.625em;
-}
-
 /**************SECTION CONTACTO**************/
 
 .contacto {
@@ -339,36 +290,35 @@ h2 {
   background-color: white;
   width: 100%;
   padding: 95px 100px;
-  color: black;
+  color: var(--colorTexto);
 }
 
 .caja-contacto {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  text-align: center;
   background-color: #ffffff;
   width: 100%;
   height: fit-content;
-  border: 2px solid var(--colorPrincipal);
   border-radius: 8px;
 }
 
 .contactame {
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
-  padding-top: 70px;
-  width: 50%;
+  width: 80%;
   height: 80%;
 }
 
 .p-contacto {
-  width: 80%;
+  width: 100%;
   padding-top: 12px;
 }
 
 .lista-contacto {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   padding-top: 40px;
   cursor: pointer;
 }
@@ -424,140 +374,6 @@ a:active {
   transition: 0, 4s;
 }
 
-
-
-/*************SECTION CONTACTO ESCRIME***************/
-
-.escribime {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  padding-right: 40px;
-  padding-top: 70px;
-  width: 50%;
-  height: fit-content;
-  margin-bottom: 50px;
-}
-
-form {
-  width: 100%;
-  padding-top: 35px;
-  padding-right: 15px;
-}
-
-label {
-  font-weight: 600;
-}
-
-.form-datos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nombre-apellido {
-  width: 48%;
-}
-
-input{
-  width: 100%;
-  height: 40px;
-  background-color: #eff0f1;
-  border: 1px solid #eff0f1;
-  border-radius: 25px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  outline: none;
-  padding: 0 10px;
-}
-
-textarea{
-  width: 100%;
-  height: 180px;
-  background-color: #eff0f1;
-  border: 1px solid #eff0f1;
-  border-radius: 25px;
-  margin-top: 10px;
-  outline: none;
-  padding: 10px;
-}
-
-input:focus {
-  border: 1px solid var(--colorSecundario);
-  box-shadow: 0 0 2px 0 var(--colorSecundario);
-}
-
-input[type="text"]:valid {
-  border: 1px solid rgb(12, 114, 12);
-  box-shadow: 0 0 2px 0 rgb(12, 114, 12);
-}
-
-input:invalid:not(:placeholder-shown) {
-  border: 1px solid rgb(230, 20, 20);
-  box-shadow: 0 0 2px 0 rgb(230, 20, 20);
-}
-
-input[type="email"]:valid {
-  border: 1px solid rgb(12, 114, 12);
-  box-shadow: 0 0 2px 0 rgb(12, 114, 12);
-}
-
-.container-input{
-  display: flex;
-  position: relative;
-}
-
-.valid-name{
-  position: absolute;
-  top: 24px;
-  right: 14px;
-  font-size: 14px;
-  color: green;
-  visibility: hidden;
-}
-
-.valid-lastname{
-  position: absolute;
-  top: 24px;
-  right: 14px;
-  font-size: 14px;
-  color: green;
-  visibility: hidden;
-}
-
-.valid-mail{
-  position: absolute;
-  top: 24px;
-  right: 14px;
-  font-size: 14px;
-  color: green;
-  visibility: hidden;
-}
-
-textarea[type="text"]:focus {
-  border: 1px solid var(--colorSecundario);
-  box-shadow: 0 0 2px 0 var(--colorSecundario);
-}
-
-.boton-enviar {
-  font-size: 16px;
-  background-color: var(--colorPrincipal);
-  color: white;
-  width: 20%;
-  height: 35px;
-  border-radius: 100px;
-  transition: 0.2s;
-  cursor: pointer;
-  border: 0;
-}
-
-.boton-enviar:hover {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-
 /*************SECTION FOOTER*************/
 
 footer {
@@ -566,7 +382,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 20em;
+  height:12em;
   background-color: var(--colorPrincipal);
 }
 .caja-menú {
@@ -611,11 +427,7 @@ footer {
   color: white;
   font-weight: 500;
   font-size: 18px;
-}
-
-.heart-footer {
-  color: var(--colorSecundario);
-  font-size: 16px;
+  margin: 0;
 }
 
 /***********RESPONSIVE**********/
@@ -683,16 +495,6 @@ footer {
   .caja-cards {
     margin-top: 30px;
   }
-
-  /*****SOMEONE*****/
-
-  .someone {
-    padding: 20px;
-  }
-
-  .main-someone {
-    width: 75%;
-}
 
   /****PROYECTOS****/
 
@@ -781,7 +583,7 @@ footer {
 }
 
   .caja-img-aboutme {
-    padding: 20px ;
+    padding: 20px 60px;
 }
 
 .img-aboutme {
@@ -817,32 +619,16 @@ h3 {
   margin: 0;
 }
 
-/***SOMEONE***/
-.someone {
-  padding: 5px;
-  height: fit-content;
-}
-
-.quote {
-  padding: 8px;
-  font-size: 40px;
-}
-
-.main-someone {
-  width: 90%;
-  padding: 15px;
-}
-
-.footer-someone {
-  font-size: 26px;
-  margin-top: 12px;
-}
-
 /***PROYECTOS***/
 
 .proyectos{
   padding: 50px 10px;
 }
+
+.caja-cards-proyectos {
+  margin-top: 30px;
+}
+
 .card-proyectos{
   height: 18em;
   width: 18em;
@@ -859,6 +645,7 @@ h3 {
 .editor-img {
   max-width: 15em;
 }
+
 /***CONTACTAME***/
 .contactame{
   padding: 35px 8px;
@@ -874,7 +661,7 @@ h3 {
 }
 
 .links{
-  justify-content: right;
+  justify-content: flex-start;
   font-size: 14px;
 }
 
@@ -900,8 +687,13 @@ form{
 }
 
 footer{
-  height: 10em;
+  height: 6em;
 }
+
+.iconos-footer {
+  font-size: 16px;
+}
+
 .p-footer {
   font-size: 14px;
 }
