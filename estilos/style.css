@@ -88,9 +88,12 @@ header {
 
 .aboutme {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   width: 100%;
   padding: 20px 95px;
+  height: 88vh;
 }
 
 .spacebetween {
@@ -149,8 +152,8 @@ h2 {
 }
 
 .caja-img-aboutme {
-  width: 45%;
-  padding: 60px  ;
+  width: 40%;
+  padding: 60px;
 }
 
 .img-aboutme {
@@ -179,7 +182,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 50px 30px;
-  width: 80%;
+  max-width: 950px;
 }
 
 .card-conocimientos{
@@ -250,6 +253,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  max-width: 950px;
 }
 
 .card-proyectos {
@@ -307,7 +311,8 @@ h2 {
 .contactame {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  max-width: 950px;
   height: 80%;
 }
 
@@ -449,6 +454,7 @@ footer {
   /******ABOUT ME******/
 
   .aboutme {
+    height: 100vh;
     padding: 15px;
     flex-direction: column;
   } 
